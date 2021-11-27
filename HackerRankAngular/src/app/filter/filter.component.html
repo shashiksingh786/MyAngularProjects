@@ -1,1 +1,8 @@
-<p>filter works!</p>
+<h2>{{filtertype=='status'?'Status':'Category'}}</h2>
+<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark">
+    <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item" *ngFor="let item of filtervalues">
+            {{item}}
+        </li>
+    </ul>
+</div>
